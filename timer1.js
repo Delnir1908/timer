@@ -5,8 +5,9 @@ if (process.argv.length <= 2) {
 let filterdInput = [];
 
 for (const element of process.argv) {
-  if (typeof(Number(element)) === 'number' && Number(element) >= 0) {
-    filterdInput.push(Number(element));
+  const num = Number(element);
+  if (typeof(num) === 'number' && num >= 0) {
+    filterdInput.push(num);
   }
 }
 
